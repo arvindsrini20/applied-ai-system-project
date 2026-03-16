@@ -25,14 +25,24 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+**Game purpose:**
+A number guessing game where the player tries to guess a secret number within a limited number of attempts. The difficulty setting controls the number range and attempt limit. After each guess the game gives a "Too High" or "Too Low" hint to guide the player toward the answer.
+
+**Bugs found:**
+- The New Game button did not work — after a win or loss the game stayed frozen and would not reset.
+- The hints were backwards — "Too High" appeared when the guess was too low, and vice versa.
+- The attempt counter stopped at 1 instead of counting all the way down to 0.
+
+**Fixes applied:**
+- Added `st.session_state.status = "playing"` inside the New Game block so the game state resets properly on each new round.
+- Corrected the comparison logic in `check_guess` in `logic_utils.py` so higher guesses return `"Too High"` and lower guesses return `"Too Low"`.
+- Fixed the initial attempts value from `1` to `0` and adjusted the counter display with `- (1 if submit else 0)` to account for Streamlit's render timing.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+![Fixed winning game](screenshot.png)
+# on mac I had to do cmd+click to open the png file.
 
-## 🚀 Stretch Features
+
 
 - [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]

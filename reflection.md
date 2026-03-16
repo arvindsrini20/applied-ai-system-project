@@ -60,14 +60,29 @@ Yes — Claude Code pointed out that the existing pytest tests only called `chec
 ## 4. What did you learn about Streamlit and state?
 
 - In your own words, explain why the secret number kept changing in the original app.
+
+Every time you clicked Submit, Streamlit re-ran the entire `app.py` script from top to bottom. The original code had `st.session_state.secret = random.randint(low, high)` without checking whether a secret already existed, so a brand new random number was generated on every single rerun. This made it impossible to win because the target kept moving.
+
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+
+Imagine every button click causes the entire program to restart from line one — that's a Streamlit rerun. Normally that would wipe out everything, like a whiteboard being erased. Session state is like a sticky note you put on the whiteboard before it gets erased — values stored there survive the rerun so the game can remember things like your score or the secret number between clicks.
+
 - What change did you make that finally gave the game a stable secret number?
+
+I wrapped the secret number generation in a guard: `if "secret" not in st.session_state:` before assigning it. This means the random number is only picked once — on the very first run — and every subsequent rerun skips that line and keeps the same secret.
 
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+Always verify fixes at two levels: a fast automated test for the logic, and a manual run of the actual app for the UI behavior. Pytest caught the swapped hint direction instantly, but only playing the game revealed that the New Game button was still broken. Using both together meant I didn't ship a fix that only worked in one context.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+I would ask the AI to explain *why* a fix works before applying it, not just accept the suggestion and move on. When Claude Code first suggested rearranging the display block to fix the counter, I applied it without fully understanding Streamlit's render model — which wasted time. Asking "why does this fix it?" upfront would have caught the flawed reasoning immediately.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+I used to assume AI-generated code was either right or wrong in an obvious way — but this project showed it can be subtly wrong in ways that look reasonable at first glance. Now I treat AI output as a starting point that needs to be read critically and tested, not a finished answer.
