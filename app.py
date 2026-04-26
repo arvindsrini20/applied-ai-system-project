@@ -1,6 +1,7 @@
 import random
 import streamlit as st
 from logic_utils import get_range_for_difficulty, parse_guess, check_guess, update_score
+from ai_coach import get_coaching_hint
 
 st.set_page_config(page_title="Glitchy Guesser", page_icon="🎮")
 
@@ -44,6 +45,11 @@ if "status" not in st.session_state:
 if "history" not in st.session_state:
     st.session_state.history = []
 
+if "current_low" not in st.session_state:
+    st.session_state.current_low = low
+if "current_high" not in st.session_state:
+    st.session_state.current_high = high
+
 st.subheader("Make a guess")
 
 with st.expander("Developer Debug Info"):
@@ -79,6 +85,8 @@ if new_game:
     st.session_state.status = "playing"  # FIX: Added status reset with Claude Code; without it, post-win/loss status caused st.stop() to fire immediately and the new game never rendered.
     st.session_state.secret = random.randint(low, high)
     st.session_state.history = []
+    st.session_state.current_low = low
+    st.session_state.current_high = high
     st.success("New game started.")
     st.rerun()
 
@@ -112,7 +120,23 @@ if submit:
         outcome, message = check_guess(guess_int, secret)
 
         if show_hint:
-            st.warning(message)
+            if outcome != "Win":
+                ai_hint = get_coaching_hint(
+                    guess=guess_int,
+                    outcome=outcome,
+                    history=st.session_state.history,
+                    current_low=st.session_state.current_low,
+                    current_high=st.session_state.current_high,
+                    attempts_left=attempt_limit - st.session_state.attempts,
+                )
+                st.warning(ai_hint if ai_hint else message)
+            else:
+                st.warning(message)
+
+        if outcome == "Too High":
+            st.session_state.current_high = min(st.session_state.current_high, guess_int - 1)
+        elif outcome == "Too Low":
+            st.session_state.current_low = max(st.session_state.current_low, guess_int + 1)
 
         st.session_state.score = update_score(
             current_score=st.session_state.score,

@@ -1,0 +1,72 @@
+{"time": 1777234236.331705, "step": "plan", "guess": 87, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 86, "range_size": 86, "midpoint": 43, "pct_eliminated": 14}}
+{"time": 1777234236.333615, "step": "act", "hint": "Too high! The number must be between 1 and 86 (86 possibilities). Try 43 to cut the remaining range in half."}
+{"time": 1777234236.333927, "step": "check", "valid": true}
+{"time": 1777234240.226453, "step": "plan", "guess": 43, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 42, "range_size": 42, "midpoint": 21, "pct_eliminated": 51}}
+{"time": 1777234240.228189, "step": "act", "hint": "Too high! The number must be between 1 and 42 (42 possibilities). Try 21 to cut the remaining range in half."}
+{"time": 1777234240.22913, "step": "check", "valid": true}
+{"time": 1777234243.486748, "step": "plan", "guess": 65, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 42, "range_size": 42, "midpoint": 21, "pct_eliminated": 0}}
+{"time": 1777234243.487925, "step": "act", "hint": "Too high! The number must be between 1 and 42 (42 possibilities). Try 21 to cut the remaining range in half."}
+{"time": 1777234243.488214, "step": "check", "valid": true}
+{"time": 1777234246.01232, "step": "plan", "guess": 56, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 42, "range_size": 42, "midpoint": 21, "pct_eliminated": 0}}
+{"time": 1777234246.0129569, "step": "act", "hint": "Too high! You've eliminated 0% of the range. The number is between 1 and 42 \u2014 try 21 next."}
+{"time": 1777234246.013786, "step": "check", "valid": true}
+{"time": 1777234248.066185, "step": "plan", "guess": 52, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 42, "range_size": 42, "midpoint": 21, "pct_eliminated": 0}}
+{"time": 1777234248.067154, "step": "act", "hint": "Too high! You've eliminated 0% of the range. The number is between 1 and 42 \u2014 try 21 next."}
+{"time": 1777234248.068465, "step": "check", "valid": true}
+{"time": 1777234250.6307042, "step": "plan", "guess": 48, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 42, "range_size": 42, "midpoint": 21, "pct_eliminated": 0}}
+{"time": 1777234250.632332, "step": "act", "hint": "Too high! Running out of attempts \u2014 the number is between 1 and 42. Try 21 now to split the remaining 42 options."}
+{"time": 1777234250.6329112, "step": "check", "valid": true}
+{"time": 1777234266.565656, "step": "plan", "guess": 32, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 31, "range_size": 31, "midpoint": 16, "pct_eliminated": 26}}
+{"time": 1777234266.567056, "step": "act", "hint": "Too high! Running out of attempts \u2014 the number is between 1 and 31. Try 16 now to split the remaining 31 options."}
+{"time": 1777234266.5681531, "step": "check", "valid": true}
+{"time": 1777234268.694659, "step": "plan", "guess": 13, "outcome": "Too Low", "plan": {"new_low": 14, "new_high": 31, "range_size": 18, "midpoint": 22, "pct_eliminated": 42}}
+{"time": 1777234268.695474, "step": "act", "hint": "Too low! Running out of attempts \u2014 the number is between 14 and 31. Try 22 now to split the remaining 18 options."}
+{"time": 1777234268.6958332, "step": "check", "valid": true}
+{"time": 1777236210.9743412, "step": "plan", "guess": 50, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 49, "range_size": 49, "midpoint": 25, "pct_eliminated": 51}}
+{"time": 1777236210.995685, "step": "act", "hint": "Too high! The number must be between 1 and 49 (49 possibilities). Try 25 to cut the remaining range in half."}
+{"time": 1777236211.002489, "step": "check", "valid": true}
+{"time": 1777236228.738328, "step": "plan", "guess": 25, "outcome": "Too Low", "plan": {"new_low": 26, "new_high": 49, "range_size": 24, "midpoint": 37, "pct_eliminated": 51}}
+{"time": 1777236228.760283, "step": "act", "hint": "Too low! The number must be between 26 and 49 (24 possibilities). Try 37 to cut the remaining range in half."}
+{"time": 1777236228.76076, "step": "check", "valid": true}
+{"time": 1777236248.40162, "step": "plan", "guess": 40, "outcome": "Too Low", "plan": {"new_low": 41, "new_high": 49, "range_size": 9, "midpoint": 45, "pct_eliminated": 62}}
+{"time": 1777236248.405259, "step": "act", "hint": "Too low! The number must be between 41 and 49 (9 possibilities). Try 45 to cut the remaining range in half."}
+{"time": 1777236248.4056802, "step": "check", "valid": true}
+{"time": 1777236251.244384, "step": "plan", "guess": 60, "outcome": "Too High", "plan": {"new_low": 41, "new_high": 49, "range_size": 9, "midpoint": 45, "pct_eliminated": 0}}
+{"time": 1777236251.245502, "step": "act", "hint": "Too high! You've eliminated 0% of the range. The number is between 41 and 49 \u2014 try 45 next."}
+{"time": 1777236251.24614, "step": "check", "valid": true}
+{"time": 1777236255.3622248, "step": "plan", "guess": 48, "outcome": "Too High", "plan": {"new_low": 41, "new_high": 47, "range_size": 7, "midpoint": 44, "pct_eliminated": 22}}
+{"time": 1777236255.3656929, "step": "act", "hint": "Too high! You've eliminated 22% of the range. The number is between 41 and 47 \u2014 try 44 next."}
+{"time": 1777236255.3670778, "step": "check", "valid": true}
+{"time": 1777236258.6290162, "step": "plan", "guess": 44, "outcome": "Too Low", "plan": {"new_low": 45, "new_high": 47, "range_size": 3, "midpoint": 46, "pct_eliminated": 57}}
+{"time": 1777236258.629737, "step": "act", "hint": "Too low! You've narrowed it to just 3 possibilities: [45, 46, 47]. You're almost there!"}
+{"time": 1777236258.6303759, "step": "check", "valid": true}
+{"time": 1777236329.495531, "step": "plan", "guess": 34, "outcome": "Too Low", "plan": {"new_low": 35, "new_high": 100, "range_size": 66, "midpoint": 67, "pct_eliminated": 34}}
+{"time": 1777236329.511269, "step": "act", "hint": "Too low! The number must be between 35 and 100 (66 possibilities). Try 67 to cut the remaining range in half."}
+{"time": 1777236329.51323, "step": "check", "valid": true}
+{"time": 1777236336.9223318, "step": "plan", "guess": 34, "outcome": "Too Low", "plan": {"new_low": 35, "new_high": 100, "range_size": 66, "midpoint": 67, "pct_eliminated": 34}}
+{"time": 1777236336.923876, "step": "act", "hint": "Too low! The number must be between 35 and 100 (66 possibilities). Try 67 to cut the remaining range in half."}
+{"time": 1777236336.924242, "step": "check", "valid": true}
+{"time": 1777236342.417718, "step": "plan", "guess": 34, "outcome": "Too Low", "plan": {"new_low": 35, "new_high": 100, "range_size": 66, "midpoint": 67, "pct_eliminated": 34}}
+{"time": 1777236342.4199722, "step": "act", "hint": "Too low! The number must be between 35 and 100 (66 possibilities). Try 67 to cut the remaining range in half."}
+{"time": 1777236342.420366, "step": "check", "valid": true}
+{"time": 1777236346.7605171, "step": "plan", "guess": 46, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 45, "range_size": 45, "midpoint": 23, "pct_eliminated": 55}}
+{"time": 1777236346.760997, "step": "act", "hint": "Too high! The number must be between 1 and 45 (45 possibilities). Try 23 to cut the remaining range in half."}
+{"time": 1777236346.761387, "step": "check", "valid": true}
+{"time": 1777236351.870503, "step": "plan", "guess": 46, "outcome": "Too Low", "plan": {"new_low": 47, "new_high": 100, "range_size": 54, "midpoint": 73, "pct_eliminated": 46}}
+{"time": 1777236351.873239, "step": "act", "hint": "Too low! The number must be between 47 and 100 (54 possibilities). Try 73 to cut the remaining range in half."}
+{"time": 1777236351.873562, "step": "check", "valid": true}
+{"time": 1777236354.14571, "step": "plan", "guess": 46, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 45, "range_size": 45, "midpoint": 23, "pct_eliminated": 55}}
+{"time": 1777236354.146685, "step": "act", "hint": "Too high! The number must be between 1 and 45 (45 possibilities). Try 23 to cut the remaining range in half."}
+{"time": 1777236354.147052, "step": "check", "valid": true}
+{"time": 1777236357.012382, "step": "plan", "guess": 46, "outcome": "Too Low", "plan": {"new_low": 47, "new_high": 100, "range_size": 54, "midpoint": 73, "pct_eliminated": 46}}
+{"time": 1777236357.0135128, "step": "act", "hint": "Too low! The number must be between 47 and 100 (54 possibilities). Try 73 to cut the remaining range in half."}
+{"time": 1777236357.014406, "step": "check", "valid": true}
+{"time": 1777236358.678357, "step": "plan", "guess": 46, "outcome": "Too Low", "plan": {"new_low": 47, "new_high": 100, "range_size": 54, "midpoint": 73, "pct_eliminated": 46}}
+{"time": 1777236358.680455, "step": "act", "hint": "Too low! The number must be between 47 and 100 (54 possibilities). Try 73 to cut the remaining range in half."}
+{"time": 1777236358.680913, "step": "check", "valid": true}
+{"time": 1777236360.149469, "step": "plan", "guess": 46, "outcome": "Too Low", "plan": {"new_low": 47, "new_high": 100, "range_size": 54, "midpoint": 73, "pct_eliminated": 46}}
+{"time": 1777236360.149955, "step": "act", "hint": "Too low! The number must be between 47 and 100 (54 possibilities). Try 73 to cut the remaining range in half."}
+{"time": 1777236360.151963, "step": "check", "valid": true}
+{"time": 1777236361.695738, "step": "plan", "guess": 46, "outcome": "Too High", "plan": {"new_low": 1, "new_high": 45, "range_size": 45, "midpoint": 23, "pct_eliminated": 55}}
+{"time": 1777236361.69754, "step": "act", "hint": "Too high! The number must be between 1 and 45 (45 possibilities). Try 23 to cut the remaining range in half."}
+{"time": 1777236361.697902, "step": "check", "valid": true}
